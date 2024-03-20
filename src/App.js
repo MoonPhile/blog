@@ -48,7 +48,7 @@ function App() {
       </div>
 
       <span>
-        skill outs 요 아래에다 포트폴리오 자랑할거 쓸거임
+        skill outs 요 아래에다 포트폴리오 자랑할거 쓸거임 맞나?
       </span>
     </div>
   );
