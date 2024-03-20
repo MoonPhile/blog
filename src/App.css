@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.top-nav{
+  display: flex;
+  background: black;
+  width: 100%;
+  color: white;
+  padding-left: 20px;
+}
+
+.skills{
+  padding-left: 20px;
+  text-align: left;
+  justify-content: center;
+  color: rgb(70, 70, 70);
+  background: rgb(235, 235, 235);
+}
+
+.skills .title{
+  display: flex;
+  text-align: left;
+  font-size: 50px;
+  font-family: 'Noto Sans KR';
+  align-items: center;
+  border-right: 1px solid black;
+  margin: 0px 0px;
+  margin-bottom: 15px;
+}
+
+.title::after{
+  content: "";
+  flex-grow: 1;
+  margin: 0px 16px;
+  background: black;
+  height: 2px;
+}/*Skills 옆에 줄긋는거*/
+
+.skills .skill-list{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+ 
+}
+.skills .skill-list > li{
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 35px;
+  font-family: 'Noto Sans KR';
+  list-style: none;
+
+
+}
+
+
+.skills .skill-list > li >ul{
+  font-size: 20px;
+  font-family: 'Noto Sans KR';
+  text-align: left;
+}
+
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
