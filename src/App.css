@@ -26,14 +26,13 @@
 
 
 .skills {
-  padding-left: 20px;
   text-align: left;
   justify-content: center;
   color: rgb(70, 70, 70);
   background: rgb(235, 235, 235);
 }
 
-.skills .title {
+.title {
   display: flex;
   text-align: left;
   font-size: 50px;
@@ -42,9 +41,10 @@
   border-right: 1px solid black;
   margin: 0px 0px;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
-.skills .title::after {
+.title::after {
   content: "";
   flex-grow: 1;
   margin: 0px 16px;
@@ -84,7 +84,24 @@
   text-align: left;
 }
 
+.portfolio{
+  margin-top: 80px;
+}
+.porfolio_num{
+  font-size: 50px;
+}
+.portfolio .portfolio_list > li {
+  display: flex;
+}
 
+.portfolio .portfolio_list > li .portfolio_content {
+  width: 20%; 
+  padding-top: 1%;
+}
+
+.img_area{
+  width: 60%;
+}
 
 
 .App-header {
