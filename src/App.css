@@ -15,7 +15,7 @@
   }
 }
 
-.top-nav{
+.top-nav {
   display: flex;
   background: black;
   width: 100%;
@@ -23,7 +23,7 @@
   padding-left: 20px;
 }
 
-.skills{
+.skills {
   padding-left: 20px;
   text-align: left;
   justify-content: center;
@@ -31,7 +31,7 @@
   background: rgb(235, 235, 235);
 }
 
-.skills .title{
+.skills .title {
   display: flex;
   text-align: left;
   font-size: 50px;
@@ -42,33 +42,40 @@
   margin-bottom: 15px;
 }
 
-.title::after{
+.title::after {
   content: "";
   flex-grow: 1;
   margin: 0px 16px;
   background: black;
   height: 2px;
-}/*Skills 옆에 줄긋는거*/
+}
 
-.skills .skill-list{
+/*Skills 옆에 줄긋는거*/
+
+.skills .skill-list {
   display: flex;
   justify-content: center;
   padding-bottom: 80px;
- 
+
 }
-.skills .skill-list > li{
+
+.skills .skill-list>li {
   width: 25%;
   margin-left: auto;
   margin-right: auto;
   font-size: 35px;
   font-family: 'Noto Sans KR';
   list-style: none;
-
-
 }
 
+@media (max-width: 768px) {
+  .skills .skill-list {
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center; /* 가운데 정렬 */
+  }
+}
 
-.skills .skill-list > li >ul{
+.skills .skill-list>li>ul {
   font-size: 20px;
   font-family: 'Noto Sans KR';
   text-align: left;
@@ -96,6 +103,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

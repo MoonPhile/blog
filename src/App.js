@@ -3,7 +3,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
-
+import { useMediaQuery} from 'react-responsive';
 function App() {
 
 
@@ -50,6 +50,7 @@ function App() {
       <span>
         skill outs 요 아래에다 포트폴리오 자랑할거 쓸거임
       </span>
+
     </div>
   );
 }
